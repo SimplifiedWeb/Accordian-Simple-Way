@@ -29,6 +29,9 @@
 
 
 
+// So basically I'm using the concept of HTMLCOLLECTION that give the index number of each elements and then I'm targetting each one.
+//And Adding the class.
+
 const accordian = document.getElementsByClassName("content-accordian")
 
 for(i = 0; i < accordian.length; i++){

@@ -79,6 +79,9 @@ body{
         border-bottom: 1px solid white;
 
 
+
+
+        // so here i use ::after pseudo element on the first one that was a default one, where no one clicks on it, on the second one when user click on it we change the content. from + to -.
         .question{
             margin-bottom: 10px;
             font-size: 20px;
