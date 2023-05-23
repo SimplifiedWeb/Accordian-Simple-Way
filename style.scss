@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// .container{
+//     background-color: rgb(255, 236, 200);
+//     height: 100vh;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+
+//     .content{
+//         width: 60%;
+//         height: auto;
+//         border: 2px solid red;
+//         padding: 20px;
+
+
+//         h1{
+//             margin-bottom: 10px;
+//         }
+
+//         .question{
+//             font-size: 20px;
+//             border-bottom: 1px solid grey;
+//             display: flex;
+//             justify-content: space-between;
+
+//             p{
+//                 margin-bottom: 10px;
+//             }
+//             .sign{
+//                 font-size: 19px;
+//                 cursor: pointer;
+                
+//                 .plus{
+//                     display: none;
+//                     // cursor: pointer;
+//                 }
+//                 .minus{
+//                     display: block;
+//                     // cursor: pointer;
+//                 }
+                
+//             }
+//         }
+//         .answer{
+//             font-size: 18px;
+//             margin-top: 10px;
+//         }
+//         .answer.active{
+//             display: none;
+//         }
+        
+//     }
+// }
+body{
+    background-color: #161616;
+    color: white;
+    height: 100vh;
+
+}
+.accordian{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+
+    h1{
+        margin-bottom: 30px;
+    }
+
+    .content-accordian{
+        width: 65%;
+        background-color: black;
+        padding: 15px 10px;
+        border-bottom: 1px solid white;
+
+
+        .question{
+            margin-bottom: 10px;
+            font-size: 20px;
+            position: relative;
+            transition: 1.5s;
+
+            &::after{
+                content: "+";
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                right: 0px;
+                text-align: center;
+            }
+        }
+        .answer{
+            transition: 1s;
+            font-size: 21px;
+            height: 0px;
+            overflow: hidden;
+        }
+        &.active .answer{
+            height: 75px;
+            transition: 1.5s;
+        }
+        &.active .question::after{
+            content: "-";
+            font-size: 30px;
+            position: absolute;
+                right: 0px;
+                text-align: center;
+
+        }
+        &.active .question{
+            font-size: 16px;
+        }
+    }
+
+}
