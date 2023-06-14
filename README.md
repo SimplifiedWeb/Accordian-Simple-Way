@@ -1,4 +1,4 @@
-# Accordian-Simple-Way
+# Accordian-Simple-Way (https://simplifiedweb.github.io/Accordian-Simple-Way/)
 This is the Simple explanation How I developed an Accordian.
 - So the layout I'm talking here was like a big box have 4 small boxes and in each box we have two boxes. which is one the answer section and the question section.
 - so basically the main container for wrapping everything and the each 4 boxes is for postioning, than inside each box we use the sections.
